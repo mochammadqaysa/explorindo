@@ -15,6 +15,11 @@ return new class extends Migration
     {
         Schema::create('places', function (Blueprint $table) {
             $table->id();
+            $table->string('name');
+            $table->string('address');
+            $table->string('gallery');
+            $table->string('description');
+            $table->double('price', 15, 2);
             $table->timestamps();
         });
     }
