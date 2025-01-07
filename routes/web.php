@@ -8,11 +8,21 @@ use Illuminate\Support\Facades\Route;
 |--------------------------------------------------------------------------
 |
 | Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider within a group which
-| contains the "web" middleware group. Now create something great!
+| routes are loaded by the RouteServiceProvider and all of them will
+| be assigned to the "web" middleware group. Make something great!
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::get('/', [LandingPageController::class, 'index'])->name('landing.index');
+Route::get('/services', [LandingPageController::class, 'services'])->name('landing.services');
+Route::get('/portofolio', [LandingPageController::class, 'portofolio'])->name('landing.portofolio');
+Route::get('/about', [LandingPageController::class, 'about'])->name('landing.about');
+Route::get('/contacts', [LandingPageController::class, 'contacts'])->name('landing.contacts');
+
+
+Route::get('/inventory', function () {
+    return redirect()->route('auth.login');
 });
+Route::get('/login', [AuthController::class, 'login'])->name('auth.login');
+Route::get('/logout', [AuthController::class, 'logout'])->name('auth.logout');
+Route::post('/login_process', [AuthController::class, 'login_process'])->name('auth.login_process');
