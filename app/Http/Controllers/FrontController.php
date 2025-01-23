@@ -13,7 +13,12 @@ class FrontController extends Controller
      */
     public function index()
     {
-        return view('pages.front.layout');
+        return view('pages.front.home');
+    }
+
+    public function search()
+    {
+        return view('pages.front.search');
     }
 
     /**
