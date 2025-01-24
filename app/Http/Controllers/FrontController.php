@@ -16,9 +16,18 @@ class FrontController extends Controller
         return view('pages.front.home');
     }
 
+    public function details()
+    {
+        return view('pages.front.details');
+    }
+
     public function search()
     {
         return view('pages.front.search');
+    }
+    public function checkout()
+    {
+        return view('pages.front.checkout');
     }
 
     /**

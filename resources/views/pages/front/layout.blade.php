@@ -68,7 +68,7 @@
 	</script>
 
 	<!-- Favicon -->
-	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="shortcut icon" href="{{asset('front/favicon.ico')}}">
 
 	<!-- Google Font -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -82,6 +82,7 @@
 	<link rel="stylesheet" type="text/css" href="{{asset('front/css/glightbox.css')}}">
 	<link rel="stylesheet" type="text/css" href="{{asset('front/css/choices.min.css')}}">
 	<link rel="stylesheet" type="text/css" href="{{asset('front/css/flatpickr.min.css')}}">
+	<link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
 
 	<!-- Theme CSS -->
 	<link rel="stylesheet" type="text/css" href="{{asset('front/css/style.css')}}">
@@ -97,7 +98,7 @@
 	<nav class="navbar navbar-expand-xl">
 		<div class="container">
 			<!-- Logo START -->
-			<a class="navbar-brand" href="{{route('landing.index')}}">
+			<a class="navbar-brand" href="{{route('front.index')}}">
 				<img class="light-mode-item navbar-brand-item" src="{{asset('front/images/logo.svg')}}" alt="logo">
 				<img class="dark-mode-item navbar-brand-item" src="{{asset('front/images/logo-light.svg')}}" alt="logo">
 			</a>
@@ -123,7 +124,7 @@
 			<ul class="nav flex-row align-items-center list-unstyled ms-xl-auto">
 
 				<li class="nav-item nav-search me-3 d-none d-sm-block">
-					<a class="nav-notification btn btn-light mb-0 p-0" href="{{route('landing.search')}}" id="searchDropdown">
+					<a class="nav-notification btn btn-light mb-0 p-0" href="{{route('front.search')}}" id="searchDropdown">
 						<i class="bi bi-search"> </i>
 					</a>
 				</li>
@@ -352,6 +353,8 @@ Footer END -->
 <!-- Bootstrap JS -->
 <script src="{{asset('front/js/bootstrap.bundle.min.js')}}"></script>
 
+
+@yield('scripts')
 <!-- Vendors -->
 <script src="{{asset('front/js/tiny-slider.js')}}"></script>
 <script src="{{asset('front/js/glightbox.js')}}"></script>

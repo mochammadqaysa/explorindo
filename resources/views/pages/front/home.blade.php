@@ -44,7 +44,7 @@ Main Banner START -->
                             </div>
 
                             <!-- Title -->
-                            <h6 class="card-title"><a href="#">Maldives Sightseeing & Adventure Tour</a></h6>
+                            <h6 class="card-title"><a href="{{ route('front.details') }}">Maldives Sightseeing & Adventure Tour</a></h6>
                             
                             <!-- Badge and Price -->
                             <div class="d-flex justify-content-between align-items-center mb-0">
