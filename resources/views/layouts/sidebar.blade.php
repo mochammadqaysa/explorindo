@@ -42,18 +42,11 @@
 
       $obj_menu->start_group()
       ->start_accordion()
-      ->sub_item_accordion('Master Data','master',["bahan_baku.list", "barang_jadi.list"],'fas fa-database')
+      ->sub_item_accordion('Master Data','master',["tour.list"],'fas fa-database')
       ->start_item_accordion('master', (
-      Request::is('inventory/bahan') ||
-      Request::is('inventory/barang') ||
-      Request::is('inventory/jenis-waste') ||
-      Request::is('inventory/waste') ||
-      Request::is('inventory/supplier') ||
-      Request::is('inventory/customer') ||
-      Request::is('inventory/gudang') ||
-      Request::is('inventory/bagian')
+      Request::is('admin/tour') 
       ))
-      ->item('Tour', 'fas fa-suitcase-rolling', 'inventory/bahan', Request::is('inventory/bahan'), "bahan_baku.list")
+      ->item('Tour', 'fas fa-suitcase-rolling', 'admin/tour', Request::is('admin/tour'), "tour.list")
       ->end_item_accordion()
       ->end_accordion()
       ->end_group();

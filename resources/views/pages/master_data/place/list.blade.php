@@ -1,14 +1,14 @@
 @extends('layouts.root')
 
-@section('title', 'Bagian')
+@section('title', 'Tour')
 
 @section('breadcrum')
 <div class="col-lg-6 col-7">
   <h6 class="h2 text-white d-inline-block mb-0">Master Data</h6>
   <nav aria-label="breadcrumb" class="d-none d-md-inline-block ml-md-4">
     <ol class="breadcrumb breadcrumb-links breadcrumb-dark">
-      <li class="breadcrumb-item"><a href="#"><i class="fas fa-people-carry"></i></a></li>
-      <li class="breadcrumb-item active" aria-current="page">Bagian</li>
+      <li class="breadcrumb-item"><a href="#"><i class="fas fa-suitcase-rolling"></i></a></li>
+      <li class="breadcrumb-item active" aria-current="page">Tour</li>
     </ol>
   </nav>
 </div>
@@ -35,10 +35,10 @@
 {!! $dataTable->scripts() !!}
 <script>
   let _url = {
-    create: `{{ route('bagian.create') }}`,
-    edit: `{{ route('bagian.edit', ':id') }}`,
-    show: `{{ route('bagian.show', ':id') }}`,
-    destroy: `{{ route('bagian.destroy', ':id') }}`
+    create: `{{ route('tour.create') }}`,
+    edit: `{{ route('tour.edit', ':id') }}`,
+    show: `{{ route('tour.show', ':id') }}`,
+    destroy: `{{ route('tour.destroy', ':id') }}`
   }
 
   function create(){
@@ -109,7 +109,7 @@
           // $('[name="branch"]').val(null).trigger('change')
           // $('[name="jobposition"]').val(null).trigger('change')
         }
-        window.LaravelDataTables["bagian-table"].draw()
+        window.LaravelDataTables["places-table"].draw()
       }
     }).fail((xhr) => {
       if(xhr?.status == 422){
@@ -160,7 +160,7 @@
             type: 'success',
             confirmButtonColor: '#007bff'
           })
-        window.LaravelDataTables["bagian-table"].draw()
+        window.LaravelDataTables["places-table"].draw()
         }).fail((xhr) => {
           Swal.fire({
             title: xhr.responseJSON.message,

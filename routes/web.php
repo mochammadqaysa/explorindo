@@ -5,6 +5,7 @@ use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\FrontController;
 use App\Http\Controllers\ModuleController;
 use App\Http\Controllers\PermissionController;
+use App\Http\Controllers\PlaceController;
 use App\Http\Controllers\RoleController;
 use App\Http\Controllers\UserController;
 use App\Http\Middleware\ExplorAuth;
@@ -43,6 +44,7 @@ Route::prefix('/admin')->middleware(ExplorAuth::class)->group(function () {
     Route::resources(['role' => RoleController::class]);
     Route::resources(['module' => ModuleController::class]);
     Route::resources(['permission' => PermissionController::class]);
+    Route::resources(['tour' => PlaceController::class]);
 
 
     Route::prefix('role')->group(function () {
