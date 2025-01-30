@@ -138,9 +138,26 @@ class PlaceController extends Controller
      * @param  \App\Models\Place  $place
      * @return \Illuminate\Http\Response
      */
-    public function edit(Place $place)
+    public function edit($uid)
     {
-        //
+        $place = Place::find($uid);
+        if ($place) {
+            $uid = $place->uid;
+            $data = $place;
+            $body = view('pages.master_data.place.edit', compact('uid', 'data'))->render();
+            $footer = '<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" onclick="save()">Save</button>';
+            return [
+                'title' => 'Edit Tour & Trip',
+                'body' => $body,
+                'footer' => $footer
+            ];
+        } else {
+            return response([
+                'status' => false,
+                'message' => 'Failed Connect to Server'
+            ], 400);
+        }
     }
 
     /**
@@ -150,9 +167,39 @@ class PlaceController extends Controller
      * @param  \App\Models\Place  $place
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Place $place)
+    public function update(Request $request, $uid)
     {
-        //
+        $request->validate([
+            'name' => 'required',
+            'address' => 'required',
+        ]);
+        $formData = $request->except(["_token", "_method"]);
+        try {
+            $place = Place::find($uid);
+            $trx = $place->update($formData);
+            if ($trx) {
+                return response([
+                    'status' => true,
+                    'message' => 'Data Berhasil Diubah'
+                ], 200);
+            } else {
+                return response([
+                    'status' => false,
+                    'message' => 'Data Gagal Diubah'
+                ], 400);
+            }
+        } catch (\Throwable $th) {
+            //throw $th;
+            return response([
+                'status' => false,
+                'message' => 'Terjadi Kesalahan Internal',
+            ], 400);
+        } catch (\Illuminate\Database\QueryException $e) {
+            return response([
+                'status' => false,
+                'message' => 'Terjadi Kesalahan Internal',
+            ], 400);
+        }
     }
 
     /**
@@ -161,8 +208,24 @@ class PlaceController extends Controller
      * @param  \App\Models\Place  $place
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Place $place)
+    public function destroy($uid)
     {
-        //
+        try {
+            $place = Place::find($uid);
+            $delete = $place->delete();
+            if ($delete) {
+                return response()->json([
+                    'message' => 'Berhasil Menghapus Data'
+                ]);
+            } else {
+                return response()->json([
+                    'message' => 'Gagal Menghapus Data'
+                ]);
+            }
+        } catch (\Illuminate\Database\QueryException $e) {
+            return response()->json([
+                'message' => 'Data Failed, this data is still used in other modules !'
+            ]);
+        }
     }
 }
