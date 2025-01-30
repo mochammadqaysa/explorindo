@@ -1,6 +1,12 @@
 <?php
 
+use App\Http\Controllers\AuthController;
+use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\FrontController;
+use App\Http\Controllers\ModuleController;
+use App\Http\Controllers\PermissionController;
+use App\Http\Controllers\RoleController;
+use App\Http\Controllers\UserController;
 use App\Http\Middleware\ExplorAuth;
 use Illuminate\Support\Facades\Route;
 
@@ -23,8 +29,26 @@ Route::get('/details', [FrontController::class, 'details'])->name('front.details
 Route::get('/checkout', [FrontController::class, 'checkout'])->name('front.checkout');
 Route::get('/status-checkout', [FrontController::class, 'status_checkout'])->name('front.status_checkout');
 
-Route::prefix('/admin')->middleware(ExplorAuth::class)->group(function() {
-    
+Route::get('/admin', function () {
+    return redirect()->route('admin.login');
+});
+
+Route::get('/admin/login', [AuthController::class, 'login'])->name('admin.login');
+
+Route::get('/admin/logout', [AuthController::class, 'logout'])->name('admin.logout');
+Route::post('/admin/login_process', [AuthController::class, 'login_process'])->name('admin.login_process');
+Route::prefix('/admin')->middleware(ExplorAuth::class)->group(function () {
+    Route::get('/dashboard', [DashboardController::class, 'index'])->name('admin.dashboard');
+    Route::resources(['user' => UserController::class]);
+    Route::resources(['role' => RoleController::class]);
+    Route::resources(['module' => ModuleController::class]);
+    Route::resources(['permission' => PermissionController::class]);
+
+
+    Route::prefix('role')->group(function () {
+        Route::get('/permission/{uid}', [RoleController::class, 'permission'])->name('role.permission');
+        Route::put('/permission/{uid}', [RoleController::class, 'permission_store'])->name('role.update_permission');
+    });
 });
 // Route::get('/services', [LandingPageController::class, 'services'])->name('landing.services');
 // Route::get('/portofolio', [LandingPageController::class, 'portofolio'])->name('landing.portofolio');

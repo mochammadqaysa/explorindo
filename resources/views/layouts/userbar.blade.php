@@ -1,11 +1,3 @@
-<li class="nav-item">
-  <a href="{{route('chat.index')}}" class="nav-link iconClass">
-    <i class="fas fa-comments"></i>
-    <span class="badge bg-danger notif-count">{{ auth()->user()->getMessageCount() }}</span>
-    @if(auth()->user()->getMessageCount() > 0)
-    @endif
-  </a>
-</li>
 <li class="nav-item dropdown">
     <a class="nav-link pr-0" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
       <div class="media align-items-center">
@@ -27,7 +19,7 @@
         <h6 class="text-overflow m-0">Welcome!</h6>
       </div>
       <div class="dropdown-divider"></div>
-      <a href="{{ route('auth.logout') }}" class="dropdown-item">
+      <a href="{{ route('admin.logout') }}" class="dropdown-item">
         <i class="fas fa-sign-out-alt"></i>
         <span>Logout</span>
       </a>

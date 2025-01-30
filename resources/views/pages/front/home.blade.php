@@ -59,67 +59,6 @@ Main Banner START -->
             </div>
         </div>
 
-        <!-- Search START -->
-        <div class="row mt-n7">
-            <div class="col-11 mx-auto">				
-                <!-- Booking from START -->
-                <form class="bg-mode shadow rounded-3 p-4">
-                    <div class="row g-4 align-items-center">
-
-                        <div class="col-xl-10">
-                            <div class="row g-4">
-                                <!-- Location -->
-                                <div class="col-md-6 col-lg-4">
-                                    <label class="h6 fw-normal mb-0"><i class="bi bi-geo-alt text-primary me-1"></i>Location</label>
-                                    <!-- Input field -->
-                                    <div class="form-border-bottom form-control-transparent form-fs-lg mt-2">
-                                        <select class="form-select js-choice" data-search-enabled="true">
-                                            <option value="">Select location</option>
-                                            <option>San Jacinto, USA</option>
-                                            <option>North Dakota, Canada</option>
-                                            <option>West Virginia, Paris</option>
-                                        </select>
-                                    </div>
-                                </div>
-
-                                <!-- Check in -->
-                                <div class="col-md-6 col-lg-4">
-                                    <label class="h6 fw-normal mb-0"><i class="bi bi-calendar text-primary me-1"></i>Date</label>
-                                    <!-- Input field -->
-                                    <div class="form-border-bottom form-control-transparent form-fs-lg mt-2">
-                                        <input type="text" class="form-control flatpickr py-2" data-date-format="d M Y" placeholder="Choose a date">
-                                    </div>
-                                </div>
-
-                                <!-- Guest -->
-                                <div class="col-md-6 col-lg-4">
-                                    <label class="h6 fw-normal mb-0"><i class="fa-solid fa-person-skating text-primary me-1"></i>Tour type</label>
-                                    <!-- Input field -->
-                                    <div class="form-border-bottom form-control-transparent form-fs-lg mt-2">
-                                        <select class="form-select js-choice" data-search-enabled="true">
-                                            <option value="">Select type</option>
-                                            <option>Adventure</option>
-                                            <option>Beach</option>
-                                            <option>Desert</option>
-                                            <option>History</option>
-                                        </select>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Button -->
-                        <div class="col-xl-2">
-                            <div class="d-grid">
-                                <a href="#" class="btn btn-lg btn-dark mb-0">Take a Tour</a>
-                            </div>
-                        </div>
-                    </div>
-                </form>
-                <!-- Booking from END -->
-            </div>
-        </div>
-        <!-- Search END -->
 
     </div>
 </section>

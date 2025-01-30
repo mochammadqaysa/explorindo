@@ -20,11 +20,11 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="Start your development with a Dashboard for Bootstrap 4.">
-  <meta name="author" content="PT. Tiara Indoprima">
+  <meta name="author" content="Explorindo">
   <meta name="csrf-token" content="{{ csrf_token() }}">
-  <title>@yield('title') | PT. Tiara Indoprima</title>
+  <title>@yield('title') | Explorindo</title>
   <!-- Favicon -->
-  <link rel="icon" href="{{ asset('argon2/assets/img/logo.png') }}" type="image/png">
+  <link rel="icon" href="{{asset('front/favicon.ico')}}" type="image/png">
   <!-- Fonts -->
   <!-- Fonts -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700">
@@ -193,22 +193,6 @@
   {{-- Global js --}}
   <script src="{{ asset('js/global.js') }}"></script>
   <script src="https://js.pusher.com/8.2.0/pusher.min.js"></script>
-  <script>
-
-    // Enable pusher logging - don't include this in production
-    Pusher.logToConsole = true;
-
-    var pusher = new Pusher('02a31aac754c1b0c371e', {
-      cluster: 'ap1'
-    });
-
-    var channel = pusher.subscribe('my-channel');
-    channel.bind('my-event', function(data) {
-      $.get("{{route('chat.notification')}}", function(data, status) {
-        $('.notif-count').text(data.count);
-      })
-    });
-  </script>
   @yield('scripts')
   <script>
     window.addEventListener('pageshow', function (event) {

@@ -19,7 +19,7 @@ class ExplorAuth
     {
         $auth = AuthCommon::user();
         if (!isset($auth->username)) {
-            return redirect('/login');
+            return redirect('/admin/login');
         }
         return $next($request);
     }

@@ -19,9 +19,9 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="apple-touch-icon" sizes="76x76" href="{{asset('argon2/assets/img/apple-icon.png')}}">
-  <link rel="icon" type="image/png" href="{{asset('argon2/assets/img/logo.png')}}">
+  <link rel="icon" type="image/png" href="{{asset('front/favicon.ico')}}">
   <title>
-    Login | PT. Tiara Indoprima
+    Login | Admin Explorindo
   </title>
   <!--     Fonts and icons     -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
@@ -64,7 +64,7 @@
               <div class="card card-plain">
                 <div class="card-header pb-0 text-start">
                   <h4 class="font-weight-bolder">Sign In</h4>
-                  <p class="mb-0">Enter your email and password to sign in</p>
+                  <p class="mb-0">Enter your username and password to sign in</p>
                 </div>
                 <div class="card-body">
                   @if(session('error'))
@@ -79,7 +79,7 @@
                     <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                   </div>
                   @enderror
-                  <form role="form" method="POST" action="{{ route('auth.login_process') }}">
+                  <form role="form" method="POST" action="{{ route('admin.login_process') }}">
                     @csrf
                     <div class="mb-3">
                       <input type="text" name="username" class="form-control form-control-lg" placeholder="Username" aria-label="Email">
@@ -98,17 +98,17 @@
                       <label class="form-check-label" for="rememberMe">Remember me</label>
                     </div> --}}
                     <div class="text-center">
-                      <button type="submit" class="btn btn-lg btn-primary btn-lg w-100 mt-4 mb-0" style="background: #0F8CFF !important">Sign in</button>
+                      <button type="submit" class="btn btn-lg btn-primary btn-lg w-100 mt-4 mb-0" style="background: #5143D9 !important">Sign in</button>
                     </div>
                   </form>
                 </div>
               </div>
             </div>
             <div class="col-9 d-lg-flex d-none h-100 my-auto pe-0 position-absolute top-0 end-0 text-center justify-content-center flex-column hide-on-md">
-              <div class="position-relative bg-gradient-dark h-100 m-3 px-7 border-radius-lg d-flex flex-column justify-content-center overflow-hidden" style="background-image: url('{{asset('argon2/assets/img/heroindex1.jpg')}}'); background-size: cover;">
+              <div class="position-relative bg-gradient-dark h-100 m-3 px-7 border-radius-lg d-flex flex-column justify-content-center overflow-hidden" style="background-image: url('{{asset('front/images/07.jpg')}}'); background-size: cover;">
                 {{-- <span class="mask bg-gradient-dark opacity-6"></span> --}}
-                <h4 class="mt-5 text-white font-weight-bolder position-relative">PT. Tiara Indoprima</h4>
-                <p class="text-white position-relative">PT. Tiara Indoprima is a dynamic private enterprise in the area of co-extruded thermoplastic sheets, films, and laminated decorative surfaces</p>
+                <h4 class="mt-5 text-white font-weight-bolder position-relative">Explorindo</h4>
+                <p class="text-white position-relative">An enterprise way to manage your trip</p>
               </div>
             </div>
           </div>

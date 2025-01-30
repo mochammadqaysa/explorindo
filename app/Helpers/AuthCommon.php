@@ -29,8 +29,8 @@ class AuthCommon
 
     public static function getUser()
     {
-        $id = Auth::user()->uid;
-        $user = User::find($id);
+        $uid = Auth::user()->uid;
+        $user = User::find($uid);
         return $user;
     }
 
