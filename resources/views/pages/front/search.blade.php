@@ -245,7 +245,7 @@ Tour grid START -->
 					<!-- Card body START -->
 					<div class="card-body px-3">
 						<!-- Title -->
-						<h5 class="card-title mb-0"><a href="tour-detail.html" class="stretched-link">Beautiful Bali with Malaysia</a></h5>
+						<h5 class="card-title mb-0"><a href="{{route('front.details')}}" class="stretched-link">Beautiful Bali with Malaysia</a></h5>
 						<span class="small"><i class="far fa-calendar-alt me-2"></i>April 12-17</span>
 
 						<!-- List -->
@@ -307,7 +307,7 @@ Tour grid START -->
 					<!-- Card body START -->
 					<div class="card-body px-3">
 						<!-- Title -->
-						<h5 class="card-title mb-0"><a href="tour-detail.html" class="stretched-link">Meeru Island Resort (Without Flight)</a></h5>
+						<h5 class="card-title mb-0"><a href="{{route('front.details')}}" class="stretched-link">Meeru Island Resort (Without Flight)</a></h5>
 						<span class="small"><i class="far fa-calendar-alt me-2"></i>April 12-17</span>
 
 						<!-- List -->
@@ -333,7 +333,7 @@ Tour grid START -->
 							</div>
 							<!-- Button -->
 							<div class="mt-2 mt-sm-0">
-								<a href="#" class="btn btn-sm btn-primary mb-0">View Details</a>    
+								<a href="{{route('front.details')}}" class="btn btn-sm btn-primary mb-0">View Details</a>    
 							</div>
 						</div>
 					</div>
@@ -365,7 +365,7 @@ Tour grid START -->
 					<!-- Card body START -->
 					<div class="card-body px-3">
 						<!-- Title -->
-						<h5 class="card-title mb-0"><a href="tour-detail.html" class="stretched-link">Sun Siyam Iru Veli Vacation</a></h5>
+						<h5 class="card-title mb-0"><a href="{{route('front.details')}}" class="stretched-link">Sun Siyam Iru Veli Vacation</a></h5>
 						<span class="small"><i class="far fa-calendar-alt me-2"></i>April 22-28</span>
 
 						<!-- List -->
@@ -426,7 +426,7 @@ Tour grid START -->
 					<!-- Card body START -->
 					<div class="card-body px-3">
 						<!-- Title -->
-						<h5 class="card-title mb-0"><a href="tour-detail.html" class="stretched-link">Lux South Ari Atoll Vacation</a></h5>
+						<h5 class="card-title mb-0"><a href="{{route('front.details')}}" class="stretched-link">Lux South Ari Atoll Vacation</a></h5>
 						<span class="small"><i class="far fa-calendar-alt me-2"></i>April 22-28</span>
 
 						<!-- List -->
@@ -484,7 +484,7 @@ Tour grid START -->
 					<!-- Card body START -->
 					<div class="card-body px-3">
 						<!-- Title -->
-						<h5 class="card-title mb-0"><a href="tour-detail.html" class="stretched-link">Romantic Seaside - Bentota and Colombo Taj Special</a></h5>
+						<h5 class="card-title mb-0"><a href="{{route('front.details')}}" class="stretched-link">Romantic Seaside - Bentota and Colombo Taj Special</a></h5>
 						<span class="small"><i class="far fa-calendar-alt me-2"></i>May 02-06</span>
 
 						<!-- List -->
@@ -545,7 +545,7 @@ Tour grid START -->
 					<!-- Card body START -->
 					<div class="card-body px-3">
 						<!-- Title -->
-						<h5 class="card-title mb-0"><a href="tour-detail.html" class="stretched-link">Colombo Vacay - Exotic Beaches of Bali</a></h5>
+						<h5 class="card-title mb-0"><a href="{{route('front.details')}}" class="stretched-link">Colombo Vacay - Exotic Beaches of Bali</a></h5>
 						<span class="small"><i class="far fa-calendar-alt me-2"></i>May 02-08</span>
 
 						<!-- List -->

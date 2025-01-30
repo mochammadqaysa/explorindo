@@ -102,7 +102,7 @@ Packages START -->
                     <!-- Card body -->
                     <div class="card-body px-2">
                         <!-- Title -->
-                        <h5 class="card-title"><a href="tour-grid.html" class="stretched-link">Lombok, Indonesia</a></h5>
+                        <h5 class="card-title"><a href="{{route('front.details')}}" class="stretched-link">Lombok, Indonesia</a></h5>
                         <!-- Content -->
                         <div class="hstack gap-2">
                             <span class="h5 mb-0 text-success">$1385</span>
@@ -138,7 +138,7 @@ Packages START -->
                     <!-- Card body -->
                     <div class="card-body px-2">
                         <!-- Title -->
-                        <h5 class="card-title"><a href="tour-grid.html" class="stretched-link">Northern Lights Escape</a></h5>
+                        <h5 class="card-title"><a href="{{route('front.details')}}" class="stretched-link">Northern Lights Escape</a></h5>
                         <!-- Content -->
                         <div class="hstack gap-2">
                             <span class="h5 mb-0 text-success">$2569</span>
@@ -173,7 +173,7 @@ Packages START -->
                     <!-- Card body -->
                     <div class="card-body px-2">
                         <!-- Title -->
-                        <h5 class="card-title"><a href="tour-grid.html" class="stretched-link">Essential Egypt</a></h5>
+                        <h5 class="card-title"><a href="{{route('front.details')}}" class="stretched-link">Essential Egypt</a></h5>
                         <!-- Content -->
                         <div class="hstack gap-2">
                             <span class="h5 mb-0 text-success">$1885</span>
@@ -207,7 +207,7 @@ Packages START -->
                     <!-- Card body -->
                     <div class="card-body px-2">
                         <!-- Title -->
-                        <h5 class="card-title"><a href="tour-grid.html" class="stretched-link">Phi Phi Islands</a></h5>
+                        <h5 class="card-title"><a href="{{route('front.details')}}" class="stretched-link">Phi Phi Islands</a></h5>
                         <!-- Content -->
                         <div class="hstack gap-2">
                             <span class="h5 text-success mb-0">$3585</span>
