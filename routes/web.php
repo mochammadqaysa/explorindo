@@ -51,6 +51,9 @@ Route::prefix('/admin')->middleware(ExplorAuth::class)->group(function () {
         Route::get('/permission/{uid}', [RoleController::class, 'permission'])->name('role.permission');
         Route::put('/permission/{uid}', [RoleController::class, 'permission_store'])->name('role.update_permission');
     });
+    Route::prefix('select2')->group(function () {
+        Route::get('/role', [RoleController::class, 'select2'])->name('select2.role');
+    });
 });
 // Route::get('/services', [LandingPageController::class, 'services'])->name('landing.services');
 // Route::get('/portofolio', [LandingPageController::class, 'portofolio'])->name('landing.portofolio');
