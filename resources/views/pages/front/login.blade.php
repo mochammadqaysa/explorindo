@@ -1,37 +1,6 @@
-<html lang="en" data-bs-theme="dark"><head>
-	<title>Booking - Multipurpose Online Booking Theme</title>
+@extends('pages.front.layout-login')
 
-	<!-- Meta Tags -->
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<meta name="author" content="Explorindo.com">
-	<meta name="description" content="Booking - Multipurpose Online Booking Theme">
-
-	<!-- Dark mode -->
-	
-
-	<!-- Favicon -->
-	<link rel="shortcut icon" href="assets/images/favicon.ico">
-
-	<!-- Google Font -->
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-	<link rel="stylesheet" href="fonts.googleapis.com/css2">
-
-	<!-- Plugins CSS -->
-	<link rel="stylesheet" type="text/css" href="assets/vendor/font_awesome/css/all.min.css">
-	<link rel="stylesheet" type="text/css" href="assets/vendor/bootstrap_icons/bootstrap_icons.css">
-
-	<!-- Theme CSS -->
-	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
-
-</head>
-
-<body cz-shortcut-listen="true">
-
-<!-- **************** MAIN CONTENT START **************** -->
-<main>
-	
+@section('main')
 <!-- =======================
 Main Content START -->
 <section class="vh-xxl-100">
@@ -43,7 +12,7 @@ Main Content START -->
 						<!-- Vector Image -->
 						<div class="col-lg-6 d-flex align-items-center order-2 order-lg-1">
 							<div class="p-3 p-lg-5">
-								<img src="assets/images/element/signin.svg" alt="">
+								<img src="{{asset('front/images/signin.svg')}}" alt="">
 							</div>
 							<!-- Divider -->
 							<div class="vr opacity-1 d-none d-lg-block"></div>
@@ -54,7 +23,7 @@ Main Content START -->
 							<div class="p-4 p-sm-7">
 								<!-- Logo -->
 								<a href="index.html">
-									<img class="h-50px mb-4" src="assets/images/logo_icon.svg" alt="logo">
+									<img class="h-50px mb-4" src="{{asset('front/images/logo-icon.svg')}}" alt="logo">
 								</a>
 								<!-- Title -->
 								<h1 class="mb-2 h3">Welcome back</h1>
@@ -112,18 +81,4 @@ Main Content START -->
 </section>
 <!-- =======================
 Main Content END -->
-
-</main>
-<!-- **************** MAIN CONTENT END **************** -->
-
-<!-- Back to top -->
-<div class="back-top"></div>
-
-<!-- Bootstrap JS -->
-<script src="assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-
-<!-- ThemeFunctions -->
-<script src="assets/js/functions.js"></script>
-
-
-<script src="js/inline_scripts.js"></script></body></html>
+@endsection

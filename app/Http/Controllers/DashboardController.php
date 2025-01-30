@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class FrontController extends Controller
+class DashboardController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -13,34 +13,7 @@ class FrontController extends Controller
      */
     public function index()
     {
-        return view('pages.front.home');
-    }
-
-    public function login()
-    {
-        return view('pages.front.login');
-    }
-
-    public function signin()
-    {
-        return view('pages.front.signin');
-    }
-    public function details()
-    {
-        return view('pages.front.details');
-    }
-
-    public function search()
-    {
-        return view('pages.front.search');
-    }
-    public function checkout()
-    {
-        return view('pages.front.checkout');
-    }
-    public function status_checkout()
-    {
-        return view('pages.front.status_checkout');
+        //
     }
 
     /**

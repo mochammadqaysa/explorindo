@@ -4,7 +4,7 @@
 	<!-- Meta Tags -->
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<meta name="author" content="Webestica.com">
+	<meta name="author" content="Explorindo.com">
 	<meta name="description" content="Booking - Multipurpose Online Booking Theme">
 
 	<!-- Dark mode -->
@@ -318,7 +318,7 @@ Footer START -->
 			<div class="container py-3 px-0">
 				<div class="d-md-flex justify-content-between align-items-center text-center text-md-left">
 					<!-- copyright text -->
-					<div class="text-primary-hover text-body"> Copyrights ©2024 Booking. build by <a href="https://www.webestica.com/" class="text-body">Webestica</a>. </div>
+					<div class="text-primary-hover text-body"> Copyrights ©2024 Booking. build by <a href="https://www.Explorindo.com/" class="text-body">Explorindo</a>. </div>
 					<!-- copyright links-->
 					<div class="mt-3 mt-md-0">
 						<ul class="nav text-primary-hover justify-content-center justify-content-md-end">

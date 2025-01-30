@@ -1,7 +1,7 @@
 /**
 * Booking - Multipurpose Online Booking Theme
 *
-* @author Webestica (https://www.webestica.com/)
+* @author Explorindo (https://www.Explorindo.com/)
 * @version 1.2.2
 **/
 
