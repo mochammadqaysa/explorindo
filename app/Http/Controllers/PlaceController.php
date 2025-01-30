@@ -91,7 +91,7 @@ class PlaceController extends Controller
             if ($trx) {
                 if ($request->hasFile('gallery')) {
                     $file = $request->file('gallery');
-                    $namefile = $data['gallery'];
+                    $namefile = explode(',', $data['gallery']);
                     foreach ($file as $key => $value) {
                         $path = $value->move(public_path('upload'), $namefile[$key]);
                     }
