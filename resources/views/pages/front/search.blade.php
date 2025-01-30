@@ -226,7 +226,7 @@ Tour grid START -->
 					<!-- Overlay item -->
 					<div class="position-relative">
 						<!-- Image -->
-						<img src="assets/images/category/tour/4by3/04.jpg" class="card-img-top" alt="Card image">
+						<img src="{{asset('front/images/04.jpg')}}" class="card-img-top" alt="Card image">
 						<!-- Overlay -->
 						<div class="card-img-overlay d-flex flex-column p-4 z-index-1">
 							<!-- Card overlay top -->
@@ -290,7 +290,7 @@ Tour grid START -->
 					<!-- Overlay item -->
 					<div class="position-relative">
 						<!-- Image -->
-						<img src="assets/images/category/tour/4by3/05.jpg" class="card-img-top" alt="Card image">
+						<img src="{{asset('front/images/05.jpg')}}" class="card-img-top" alt="Card image">
 						<!-- Overlay -->
 						<div class="card-img-overlay d-flex flex-column p-4 z-index-1">
 							<!-- Card overlay top -->
@@ -348,7 +348,7 @@ Tour grid START -->
 					<!-- Overlay item -->
 					<div class="position-relative">
 						<!-- Image -->
-						<img src="assets/images/category/tour/4by3/06.jpg" class="card-img-top" alt="Card image">
+						<img src="{{asset('front/images/06.jpg')}}" class="card-img-top" alt="Card image">
 						<!-- Overlay -->
 						<div class="card-img-overlay d-flex flex-column p-4 z-index-1">
 							<!-- Card overlay top -->
@@ -409,7 +409,7 @@ Tour grid START -->
 					<!-- Overlay item -->
 					<div class="position-relative">
 						<!-- Image -->
-						<img src="assets/images/category/tour/4by3/07.jpg" class="card-img-top" alt="Card image">
+						<img src="{{asset('front/images/07.jpg')}}" class="card-img-top" alt="Card image">
 						<!-- Overlay -->
 						<div class="card-img-overlay d-flex flex-column p-4 z-index-1">
 							<!-- Card overlay top -->
@@ -467,7 +467,7 @@ Tour grid START -->
 					<!-- Overlay item -->
 					<div class="position-relative">
 						<!-- Image -->
-						<img src="assets/images/category/tour/4by3/08.jpg" class="card-img-top" alt="Card image">
+						<img src="{{asset('front/images/08.jpg')}}" class="card-img-top" alt="Card image">
 						<!-- Overlay -->
 						<div class="card-img-overlay d-flex flex-column p-4 z-index-1">
 							<!-- Card overlay top -->
@@ -528,7 +528,7 @@ Tour grid START -->
 					<!-- Overlay item -->
 					<div class="position-relative">
 						<!-- Image -->
-						<img src="assets/images/category/tour/4by3/09.jpg" class="card-img-top" alt="Card image">
+						<img src="{{asset('front/images/09.jpg')}}" class="card-img-top" alt="Card image">
 						<!-- Overlay -->
 						<div class="card-img-overlay d-flex flex-column p-4 z-index-1">
 							<!-- Card overlay top -->
